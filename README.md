@@ -1,2 +1,4 @@
 # gsd
-discography page
+## discography page
+
+- A discography page using JS to sort albums by year of release
