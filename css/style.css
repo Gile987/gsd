@@ -14,6 +14,7 @@
   --ff-secondary: "Indie Flower";
   --spacing: 0.25rem;
   --fixed-width: 620px;
+  --radius: 0.5rem;
 }
 
 
@@ -63,8 +64,12 @@ h4 {
 }
 
 p {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.2rem;
   color: var(--clr-text);
+}
+
+img {
+  display: block;
 }
 
 
@@ -87,3 +92,34 @@ p {
   margin-right: auto;
 }
 
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  gap: 3rem 2rem;
+  justify-items: center;
+}
+
+.discography-album {
+  display: grid;
+  gap: 1rem 2rem;
+  max-width: 25rem;
+}
+
+.album-info header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px dotted var(--clr-secondary);
+}
+
+.buy {
+  color: var(--clr-secondary);
+}
+
+.photo {
+  object-fit: cover;
+  height: 200px;
+  border: 0.25rem solid var(--clr-primary);
+  border-radius: var(--radius);
+}
