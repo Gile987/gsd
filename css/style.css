@@ -1,0 +1,89 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light&display=swap');
+
+
+/* variables */
+
+:root {
+  --clr-primary: #ff2768;
+  --clr-secondary: #fff387;
+  --clr-text: #e9e9e7;
+  --clr-turquoise: #13c3f7;
+  --ff-primary: "Shadows Into Light";
+  --ff-secondary: "Indie Flower";
+  --spacing: 0.25rem;
+  --fixed-width: 620px;
+}
+
+
+/* override/reset some default styling */
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* global styles */ 
+
+body {
+  font-family: var(--ff-primary);
+  background: var(--clr-turquoise);
+  color: var(--clr-primary);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-text);
+}
+
+
+/* discography section */
+
+.discography {
+  padding: 5rem 0;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.underline {
+  width: 18rem;
+  height: 0.25rem;
+  background: var(--clr-secondary);
+  margin-left: auto;
+  margin-right: auto;
+}
+
