@@ -153,3 +153,23 @@ const discography = [
 	}
 ]
 
+// window.addEventListener('unhandledrejection', event => discography.map(({ album, cover, year}) => `<article class="discography-album">
+
+const albums = document.querySelector('.albums-holder');
+
+window.addEventListener('DOMContentLoaded', () => {
+	let showDiscography = discography.map(disco => {
+		return `<article class="discography-album">
+			<img src="${disco.cover}" class="photo" alt="${disco.album}">
+			<div class="album-info">
+				<header>
+					<h4>${disco.album}</h4>
+					<h4 class="buy">${disco.year}</h4>
+				</header>
+				<p class="item-text">more information</p>
+			</div>
+		</article>`;
+
+	});
+	albums.innerHTML = showDiscography.join('')
+});
