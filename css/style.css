@@ -145,6 +145,11 @@ img {
   height: 250px;
   border: 0.25rem solid var(--clr-primary);
   border-radius: var(--radius);
+  transition: transform .2s;
+}
+
+.photo:hover {
+  transform: scale(1.8);
 }
 
 .album-text {
