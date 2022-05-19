@@ -237,7 +237,7 @@ let showAlbums = discography => {
 					<h4>${disco.album}</h4>
 					<h4 class="buy">${disco.year}</h4>
 				</header>
-				<p class="item-text">more information</p>
+				<p class="album-text">more information</p>
 			</div>
 		</article>`;
 	});

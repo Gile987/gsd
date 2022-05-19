@@ -92,19 +92,26 @@ img {
   margin-right: auto;
 }
 
+.selector-container {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
 .albums-container {
   width: 90vw;
   margin: 0 auto;
   max-width: 1170px;
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem 2rem;
   justify-items: center;
 }
 
 .discography-album {
-  display: grid;
-  gap: 1rem 2rem;
-  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 33rem;
 }
 
 .album-info header {
@@ -113,13 +120,25 @@ img {
   border-bottom: 0.5px dotted var(--clr-secondary);
 }
 
+.album-info h4 {
+  margin-bottom: 0.5rem;
+}
+
 .buy {
   color: var(--clr-secondary);
 }
 
 .photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   object-fit: cover;
   height: 200px;
   border: 0.25rem solid var(--clr-primary);
   border-radius: var(--radius);
+}
+
+.album-text {
+  margin-bottom: 0;
+  padding-top: 1rem;
 }
