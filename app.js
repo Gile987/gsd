@@ -153,7 +153,7 @@ const discography = [
 	}
 ]
 
-const albums = document.querySelector('.albums-holder');
+const albums = document.querySelector('.albums-container');
 
 window.addEventListener('DOMContentLoaded', () => {
 	showAlbums(discography);
