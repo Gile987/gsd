@@ -234,7 +234,7 @@ let showAlbums = discography => {
 			<img src="${disco.cover}" class="photo" alt="${disco.album}">
 			<div class="album-info">
 				<header>
-					<h4>${disco.album}</h4>
+					<h3>${disco.album}</h3>
 					<h4 class="buy">${disco.year}</h4>
 				</header>
 				<p class="album-text">more information</p>
@@ -247,7 +247,7 @@ let showAlbums = discography => {
 const filterDisc = (year, discography) => {
 	const filteredYear = discography.filter(selectedYear => {
 		if(selectedYear.year === year) {
-			console.log(selectedYear);
+
 			return selectedYear;
 		}
 	});

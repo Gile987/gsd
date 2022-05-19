@@ -1,6 +1,6 @@
 /* fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
 
 /* variables */
@@ -10,8 +10,8 @@
   --clr-secondary: #fff387;
   --clr-text: #e9e9e7;
   --clr-turquoise: #13c3f7;
-  --ff-primary: "Shadows Into Light";
-  --ff-secondary: "Indie Flower";
+  --ff-primary: "Amatic SC";
+  /* --ff-secondary: "Indie Flower"; */
   --spacing: 0.25rem;
   --fixed-width: 620px;
   --radius: 0.5rem;
@@ -48,11 +48,11 @@ a {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h3 {
@@ -118,14 +118,23 @@ img {
   display: flex;
   justify-content: space-between;
   border-bottom: 0.5px dotted var(--clr-secondary);
+  margin-top: 0.6rem;
+  text-transform: lowercase;
+}
+
+.album-info h3 {
+  color: var(--clr-text);
+  font-size: 2rem;
 }
 
 .album-info h4 {
   margin-bottom: 0.5rem;
+  margin-left: 0.8rem;
 }
 
 .buy {
   color: var(--clr-secondary);
+  font-size: 2rem;
 }
 
 .photo {
@@ -133,12 +142,13 @@ img {
   margin-left: auto;
   margin-right: auto;
   object-fit: cover;
-  height: 200px;
+  height: 250px;
   border: 0.25rem solid var(--clr-primary);
   border-radius: var(--radius);
 }
 
 .album-text {
+  font-size: 2rem;
   margin-bottom: 0;
   padding-top: 1rem;
 }
